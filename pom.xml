@@ -1,6 +1,9 @@
+
+
 <project
 	xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.web.cal</groupId>
 	<artifactId>webapp</artifactId>
@@ -9,15 +12,17 @@
 	<name>WebAppCal Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<build>
-		<plugin>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.1</version>
-			<configuration>
-				<encoding>UTF-8</encoding>
-				<source>1.7</source>
-				<target>1.7</target>
-			</configuration>
-		</plugin>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>8</source>
+					<target>8</target>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 	<dependencies>
 		<dependency>
@@ -36,7 +41,6 @@
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
-			<!-- <url>http://52.204.135.48:8081/nexus/content/repositories/releases</url> -->
 			<url>http://binary.ibm.com/nexus/content/repositories/releases</url>
 		</repository>
 	</distributionManagement>
